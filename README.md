@@ -45,6 +45,7 @@ Zachery Hysong
 This is a project that was made (so far) in one day, about 15 hours worth of work, and is my first real C++ project outside
 the simple 'hello world' applications. As such, it is far from optimized, has many quirks, lots of potential bugs, etc.
 The plan is that I will be adding more to this over time, refactoring the code, optimizing it, and adding features over time.
+
 My reason for making this application was two-fold. First, I wanted a C++ program that I wrote more or less myself to put in
 my portfolio, and second, I wanted an app that I would actually use myself on a regular basis. This is not intended to solve
 any real world problems that I see other people having, but is more just a personal project that I want to share.
