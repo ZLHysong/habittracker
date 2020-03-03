@@ -303,9 +303,9 @@ int completeHabit(string name) {
                     line += ",";
                 }
                 line += to_string(day);
-                out_file << line.c_str() << "\n";
+                out_file << line << "\n";
             } else {
-                out_file << line.c_str() << "\n";
+                out_file << line << "\n";
             }
         }
         if(rename(oldname, newname) != 0 ) {
