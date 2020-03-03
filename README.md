@@ -19,7 +19,7 @@ The basic concept is that you will have a list of things you do every day, medit
 
 - `-a` <habitname>, `--add`
   - Adds a new habit
-`-c` <habitname>, `--complete`
+- `-c` <habitname>, `--complete`
   - Marks a habit complete for today
 - `-d` <habitname>, `--d` (THIS FEATURE IS NOT CURRENTLY FUNCTIONAL)
   - Deletes a habit
