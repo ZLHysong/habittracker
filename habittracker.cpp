@@ -338,7 +338,7 @@ int main(int argc, char* argv[]) {
         if ((arg == "-h") || (arg == "--help")) {
             printf(" NAME\n");
             printf("     Habit Tracker\n");
-            printf(" SYNOPSIS:\n");
+            printf(" SYNOPSIS\n");
             printf("     habittracker [OPTION] [HABIT]\n");
             printf(" DESCRIPTION\n");
             printf("     Habit Tracker is a simple meant to help you track your daily tasks in a way that is simple and easy to use.\n");
