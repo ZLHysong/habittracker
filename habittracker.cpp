@@ -329,54 +329,62 @@ int completeHabit(string name) {
     return 0;
 }
 
+int printHelp() {
+    printf(" NAME\n");
+    printf("     Habit Tracker\n");
+    printf(" SYNOPSIS\n");
+    printf("     habittracker [OPTION] [HABIT]\n");
+    printf(" DESCRIPTION\n");
+    printf("     Habit Tracker is a simple meant to help you track your daily tasks in a way that is simple and easy to use.\n");
+    printf("     The basic concept is that you will have a list of things you do every day, meditate, study, exercise,\n");
+    printf("     hydrate, etc. This application will put those into a simple, pretty calendar so you can see with one line\n");
+    printf("     whether you met your goals for each day this month.\n");
+    printf(" TODO\n");
+    printf("     - Delete a Habit\n");
+    printf("     - Uncomplete a Habit\n");
+    printf("     - Show all Calendars from one command\n");
+    printf(" OPTIONS\n");
+    printf("     `-a`, `--add`\n");
+    printf("         Add a new habit\n");
+    printf("     `-d`, `--delete` (THIS FEATURE IS NOT CURRENTLY FUNCTIONAL)\n");
+    printf("         Delete a habit\n");
+    printf("     `-c`, `--complete`\n");
+    printf("         Mark habit complete\n");
+    printf("     `-i`, `--incomplete` (THIS FEATURE IS NOT CURRENTLY FUNCTIONAL)\n");
+    printf("         Mark habit incomplete\n");
+    printf("     `-l`, `--list`\n");
+    printf("         List all habits\n");
+    printf("     `-s`, `--show`\n");
+    printf("        Show habit calendar\n");
+    printf("     `-h`, `--help`\n");
+    printf("        Show program help\n");
+    printf(" LEGEND\n");
+    printf("     ◆ Task Complete (Previous Day)\n");
+    printf("     \033[1;32m◆\033[0m Task Complete (Today)\n");
+    printf("     ◇ Task Incomplete (Previous Day)\n");
+    printf("     \033[1;32m◇\033[0m Task Incomplete (Today)\n");
+    printf("     \033[1;35m∙\033[0m Day Not Happened Yet\n");
+    printf(" AUTHOR\n");
+    printf("     Zachery Hysong\n");
+    printf(" REPORTING BUGS AND MAKING SUGGESTIONS\n");
+    printf("     Feel free to email me with any bugs or suggestions at `zlhysong@gmail.com`\n");
+    printf(" COPYRIGHT\n");
+    printf("     Copyright © 2020 Zachery Hysong. License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\n");
+    printf("     This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.\n");
+    return 0;
+}
+
 //Main program
 int main(int argc, char* argv[]) {
-
+    if (argc < 2) {
+        printHelp();
+        return 0;
+    }
     for (int i = 1; i < argc; ++i) {
         string arg = argv[i];
         
         if ((arg == "-h") || (arg == "--help")) {
-            printf(" NAME\n");
-            printf("     Habit Tracker\n");
-            printf(" SYNOPSIS\n");
-            printf("     habittracker [OPTION] [HABIT]\n");
-            printf(" DESCRIPTION\n");
-            printf("     Habit Tracker is a simple meant to help you track your daily tasks in a way that is simple and easy to use.\n");
-            printf("     The basic concept is that you will have a list of things you do every day, meditate, study, exercise,\n");
-            printf("     hydrate, etc. This application will put those into a simple, pretty calendar so you can see with one line\n");
-            printf("     whether you met your goals for each day this month.\n");
-            printf(" TODO\n");
-            printf("     - Delete a Habit\n");
-            printf("     - Uncomplete a Habit\n");
-            printf("     - Show all Calendars from one command\n");
-            printf(" OPTIONS\n");
-            printf("     `-a`, `--add`\n");
-            printf("         Add a new habit\n");
-            printf("     `-d`, `--delete` (THIS FEATURE IS NOT CURRENTLY FUNCTIONAL)\n");
-            printf("         Delete a habit\n");
-            printf("     `-c`, `--complete`\n");
-            printf("         Mark habit complete\n");
-            printf("     `-i`, `--incomplete` (THIS FEATURE IS NOT CURRENTLY FUNCTIONAL)\n");
-            printf("         Mark habit incomplete\n");
-            printf("     `-l`, `--list`\n");
-            printf("         List all habits\n");
-            printf("     `-s`, `--show`\n");
-            printf("        Show habit calendar\n");
-            printf("     `-h`, `--help`\n");
-            printf("        Show program help\n");
-            printf(" LEGEND\n");
-            printf("     ◆ Task Complete (Previous Day)\n");
-            printf("     \033[1;32m◆\033[0m Task Complete (Today)\n");
-            printf("     ◇ Task Incomplete (Previous Day)\n");
-            printf("     \033[1;32m◇\033[0m Task Incomplete (Today)\n");
-            printf("     \033[1;35m∙\033[0m Day Not Happened Yet\n");
-            printf(" AUTHOR\n");
-            printf("     Zachery Hysong\n");
-            printf(" REPORTING BUGS AND MAKING SUGGESTIONS\n");
-            printf("     Feel free to email me with any bugs or suggestions at `zlhysong@gmail.com`\n");
-            printf(" COPYRIGHT\n");
-            printf("     Copyright © 2020 Zachery Hysong. License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\n");
-            printf("     This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.\n");
+            printHelp();
             return 0;
         } else if ((arg == "-a") || (arg == "--add")) {
             if (i + 1 < argc) { // Make sure we aren't at the end of argv!
