@@ -17,18 +17,23 @@ The basic concept is that you will have a list of things you do every day, medit
 
 ## OPTIONS
 
-- `-a` <habitname>, `--add`
-  - Adds a new habit
-- `-c` <habitname>, `--complete`
-  - Marks a habit complete for today
-- `-d` <habitname>, `--d` (THIS FEATURE IS NOT CURRENTLY FUNCTIONAL)
-  - Deletes a habit
-- `-l` <habitname>, `--list`
-  - Draws a calendar for the given habit
-- `-g` <habitname>, `--gethabits`
-  - Lists all habits
-- `-u` <habitname>, `--uncomplete` (THIS FEATURE IS NOT CURRENTLY FUNCTIONAL)
-  - Marks a habit uncomplete for today
+## OPTIONS
+
+- `-l`, `--list`
+  - List habits
+- `-c`, `--complete`
+  - Mark habit complete
+- `-i`, `--incomplete` (THIS FEATURE IS NOT CURRENTLY FUNCTIONAL)
+  - Mark habit incomplete
+- `-h`, `--help`
+  - Show program help
+- `-a`, `--add`
+  - Add a new habit
+- `-d`, `--delete` (THIS FEATURE IS NOT CURRENTLY FUNCTIONAL)
+  - Delete a habit
+- `-s`, `--show`
+  - Show habit calendar
+
 
 ## LEGEND
 
