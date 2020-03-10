@@ -2,7 +2,7 @@
 habittracker
 
 # ignore local build settings which vary by platform
-.vscode
+.vscode/*
 
 # ignore mac stuff
 .DS_Store
