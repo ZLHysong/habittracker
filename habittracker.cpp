@@ -5,7 +5,7 @@
 #include <sstream>
 #include <fstream>
 #include <cstddef>
-#include <bits/stdc++.h>
+#include <algorithm>
 
 using namespace std;
 

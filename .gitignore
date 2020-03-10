@@ -1,1 +1,14 @@
+# ignore executable
 habittracker
+
+# ignore local build settings which vary by platform
+.vscode
+
+# ignore mac stuff
+.DS_Store
+*.dSYM
+
+# ignore data files created by program
+data.txt
+data.bak
+data.tmp
